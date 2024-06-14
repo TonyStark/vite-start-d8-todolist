@@ -1,0 +1,35 @@
+body{
+  background-color: #D8EFD3; 
+}
+
+.todolist-card{
+  .title{
+    background-color: #AF47D2;
+    color: white;
+  }
+  .list-body{
+    background-color: white;
+    .floating-button{
+      position: absolute;
+      bottom:-27px;
+      left: 50%;
+      transform: translateX(-50%);
+      button{
+        background-color: #AF47D2;
+        color: white;
+        border-radius: 30px;
+        padding: 10px 20px;
+      }
+    }
+    .per-task{
+      .trash-btn{
+        visibility: hidden;
+      }
+      &:hover{
+        .trash-btn{
+          visibility: visible;
+        }
+      }
+    }
+  }
+}
